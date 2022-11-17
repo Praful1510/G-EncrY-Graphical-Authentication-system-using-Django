@@ -21,6 +21,15 @@ Enter Your Mail id and Generated SMTP password . for sending a OTP
 ![Screenshot (68)](https://user-images.githubusercontent.com/107274773/202574535-b2c6d506-2ed8-4812-b0f5-7d080cc2cdd8.png)
 ![Screenshot (69)](https://user-images.githubusercontent.com/107274773/202574540-b8d45909-34a2-470a-99b0-a9834905d362.png)
 
+then select multiple block sequencily as a password 
+like if you select cap , eye , hand at time of register so that at the time of login pattern will be similar
+
+# key feature 
+* Does'nt have to break their hash if the hash will be leaked .
+* Prevent shoulder surfing and brute-forceing kinds of Attacks .
+* Select slice img will also  be encrypted then the hash will be comes out.
+* User friendly and Easy to Understandable .
+
 So many thinking in this proto-type like (one block hash as key of another block {inspire from block chain concept}) its not a actual project but its similar kind of Model . 
 All Necessities will be common on both .
 #G-EncrY by Praful shrivastava
