@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--The Site is not a exact model/completed_project ,its only for Demonstration of Actual Model Necessary things are same as well-->
+
+<head>
+    <title>G=EncrY | Demontration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/static/css/animate.css">
+
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+
+
+    <link rel="stylesheet" href="/static/css/flaticon.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <div id="colorlib-page">
+        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+        <aside id="colorlib-aside" role="complementary" class="js-fullheight">
+            {% if info %}
+            <h1 id="colorlib-logo" class="mb-4 mb-md-5"><a href="index.html" style="background-image: url(/static/images/3236792.webp);">{{info.Name}}</a></h1>
+            {% else %}
+            <h1 id="colorlib-logo" class="mb-4 mb-md-5">
+                <a href="index.html" style="background-image: url(/static/images/3236792.webp);">G-EncrY</a>
+            </h1>
+            {% endif %}
+            <nav id="colorlib-main-menu" role="navigation">
+                <ul>
+                    <li class="colorlib-active"><a href="index.html">Home</a></li>
+                    <li><a href="join">Sign-up</a></li>
+                    <li><a href="join">Sign-in</a></li>
+                    <li><a href="logout">Logout</a></li>
+                </ul>
+            </nav>
+
+            <div class="colorlib-footer">
+                <div class="mb-4">
+                    <h3>Subscribe for G-EncrY by Master Industries</h3>
+                    <form action="#" class="colorlib-subscribe-form">
+                        <div class="form-group d-flex">
+                            <div class="icon"><span class="icon-paper-plane"></span></div>
+                            {% if info %}
+                            <input type="text" class="form-control" placeholder="Enter Email Address" value="{{info.Email}}"> {% else %}
+                            <input type="text" class="form-control" placeholder="Enter Email Address"> {% endif %}
+                        </div>
+                    </form>
+                </div>
+                <p class="pfooter">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> All rights reserved | G-EncrY is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Security Switch</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+        </aside>
+        <!-- END COLORLIB-ASIDE -->
+        <div id="colorlib-main">
+            <section class="ftco-section ftco-no-pt ftco-no-pb">
+                <div class="container px-md-0">
+                    <div class="row d-flex no-gutters">
+                        <div class="col-md-12 portfolio-wrap">
+                            <div class="row no-gutters align-items-center">
+                                <a href="/static/images/2939864.jpg" class="col-md-6 img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(/static/images/2939864.jpg);">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-expand"></span>
+                                    </div>
+                                </a>
+                                <div class="col-md-6">
+                                    <div class="text pt-5 pl-0 px-lg-5 pl-md-4 ftco-animate">
+                                        <div class="px-4 px-lg-4">
+                                            <div class="desc">
+                                                <div class="top">
+                                                    <span class="subheading">Password</span>
+                                                    <h2 class="mb-4"><a href="/">Graphical Password Authentication</a></h2>
+                                                </div>
+                                                <div class="absolute">
+                                                    <p>In a graphical password authentication system, the user has to select from images, in a specific order, presented to them in a graphical user interface (GUI). According to a study, the human brain has
+                                                        a greater capability of remembering what they see (pictures) rather than alphanumeric characters.
+                                                    </p>
+                                                </div>
+                                                <p><a href="/" class="custom-btn">Encypt</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 portfolio-wrap">
+                            <div class="row no-gutters align-items-center">
+                                <a href="/static/images/7093926.jpg" class="col-md-6 order-md-last img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(/static/images/7093926.jpg);">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-expand"></span>
+                                    </div>
+                                </a>
+                                <div class="col-md-6">
+                                    <div class="text pt-5 px-md-5 ftco-animate">
+                                        <div class="px-4 px-lg-4">
+                                            <div class="desc text-md-right">
+                                                <div class="top">
+                                                    <span class="subheading">Microsoft</span>
+                                                    <h2 class="mb-4"><a href="/">Password Attacks</a></h2>
+                                                </div>
+                                                <div class="absolute">
+                                                    <p>According to Microsoft's 'Digital Defense Report 2022', the volume of password attacks has risen to an estimated 921 attacks every second Globally, A 74% increase in just one year !</p>
+                                                </div>
+                                                <p><a href="https://www.microsoft.com/en-us/security/business/microsoft-digital-defense-report-2022" class="custom-btn">Defense Report</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 portfolio-wrap">
+                            <div class="row no-gutters align-items-center">
+                                <a href="/static/images/1619058.jpg" class="col-md-6 img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(/static/images/1619058.jpg);">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-expand"></span>
+                                    </div>
+                                </a>
+                                <div class="col-md-6">
+                                    <div class="text pt-5 pl-0 px-lg-5 pl-md-4 ftco-animate">
+                                        <div class="px-4 px-lg-4">
+                                            <div class="desc">
+                                                <div class="top">
+                                                    <span class="subheading">Malware</span>
+                                                    <h2 class="mb-4"><a href="/">Malware statistics</a></h2>
+                                                </div>
+                                                <div class="absolute">
+                                                    <p>Employees with infected machines are spreading viruses more broadly Even Malware is still a major problem worldwide, but the nature of malware is changing. Here are some of the biggest insights into
+                                                        how malware is evolving in 2022.</p>
+                                                </div>
+                                                <p><a href="https://www.comparitech.com/antivirus/malware-statistics-facts/" class="custom-btn">Wanna Cry</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 portfolio-wrap">
+                            <div class="row no-gutters align-items-center">
+                                <a href="/static/images/work-4.jpg" class="col-md-6 order-md-last img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(/static/images/directories.jpg);">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-expand"></span>
+                                    </div>
+                                </a>
+                                <div class="col-md-6">
+                                    <div class="text pt-5 px-md-5 ftco-animate">
+                                        <div class="px-4 px-lg-4">
+                                            <div class="desc text-md-right">
+                                                <div class="top">
+                                                    <span class="subheading">Directories</span>
+                                                    <h2 class="mb-4"><a href="/">Directories Traversal </a></h2>
+                                                </div>
+                                                <div class="absolute">
+                                                    <p>Directory Browsing Vulnerability | Directory Listing / Traversal Attack | How To | Demo [Screenshots] | Mutillidae</p>
+                                                </div>
+                                                <p><a href="https://www.amirootyet.com/post/directory-browsing-vulnerability/" class="custom-btn">View Article</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 portfolio-wrap">
+                            <div class="row no-gutters align-items-center">
+                                <a href="/static/images/work-5.jpg" class="col-md-6 img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(/static/images/7094189.jpg);">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-expand"></span>
+                                    </div>
+                                </a>
+                                <div class="col-md-6">
+                                    <div class="text pt-5 pl-0 px-lg-5 pl-md-4 ftco-animate">
+                                        <div class="px-4 px-lg-4">
+                                            <div class="desc">
+                                                <div class="top">
+                                                    <span class="subheading">Compromised</span>
+                                                    <h2 class="mb-4"><a href="/">Compromised Computers or Devices</a></h2>
+                                                </div>
+                                                <div class="absolute">
+                                                    <p>A Compromised Computer is defined as any computing resource whose confidentiality, integrity or availability has been adversely impacted, either intentionally or unintentionally, by an untrusted source.
+                                                    </p>
+                                                </div>
+                                                <p><a href="https://uthsc.edu/its/cybersecurity/compromised-computers.php" class="custom-btn">View Resource</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 portfolio-wrap">
+                            <div class="row no-gutters align-items-center">
+                                <a href="/static/images/2939794.jpg" class="col-md-6 order-md-last img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(/static/images/2939794.jpg);">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-expand"></span>
+                                    </div>
+                                </a>
+                                <div class="col-md-6">
+                                    <div class="text pt-5 px-md-5 ftco-animate">
+                                        <div class="px-4 px-lg-4">
+                                            <div class="desc text-md-right">
+                                                <div class="top">
+                                                    <span class="subheading">Privilege</span>
+                                                    <h2 class="mb-4"><a href="/">A privilege escalation vulnerability</a></h2>
+                                                </div>
+                                                <div class="absolute ">
+                                                    <p>PE vulnerabilities could allow an attacker to gain unauthorized access to organizations’ IT network and carry out various malicious operations such as stealing sensitive data, disrupting operations,
+                                                        and creating backdoors for future attacks.</p>
+                                                </div>
+                                                <p><a href="shttps://cyware.com/news/privilege-escalation-vulnerability-what-is-it-and-how-to-stay-protected-from-it-3d8d7f7f" class="custom-btn">Escalation</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 portfolio-wrap">
+                            <div class="row no-gutters align-items-center">
+                                <a href="/static/images/work-7.jpg" class="col-md-6 img image-popup js-fullheight d-flex align-items-center justify-content-center" style="background-image: url(/static/images/6898084.png);">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-expand"></span>
+                                    </div>
+                                </a>
+                                <div class="col-md-6">
+                                    <div class="text pt-5 pl-0 px-lg-5 pl-md-4 ftco-animate ">
+                                        <div class="px-4 px-lg-4 ">
+                                            <div class="desc">
+                                                <div class="top ">
+                                                    <span class="subheading">Shield</span>
+                                                    <h2 class="mb-4"><a href="/">Cyber Shield 2022</a></h2>
+                                                </div>
+                                                <div class="absolute">
+                                                    <p>Hundreds of National Guard soldiers and airmen have converged in an unclassified environment in Arkansas to prepare for cyber attacks against the Department of Defense computer networks !</p>
+                                                </div>
+                                                <p>
+                                                    <a href="https://reservenationalguard.com/reserve-guard-news/cyber-shield-2022-focuses-on-safeguarding-dod-information-network/" class="custom-btn">Become Cyberguard</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 portfolio-wrap">
+                            <div class="row no-gutters align-items-center">
+                                <a href="/static/images/316894.jpg" class="col-md-6 order-md-last img image-popup js-fullheight d-flex align-items-center justify-content-center " style="background-image: url(/static/images/316894.jpg); ">
+                                    <div class="icon d-flex align-items-center justify-content-center ">
+                                        <span class="fa fa-expand "></span>
+                                    </div>
+                                </a>
+                                <div class="col-md-6">
+                                    <div class="text pt-5 px-md-5 ftco-animate">
+                                        <div class="px-4 px-lg-4">
+                                            <div class="desc text-md-right">
+                                                <div class="top">
+                                                    <span class="subheading">Quantum</span>
+                                                    <h2 class="mb-4"><a href="/">THE PROMISE AND IMPACT OF QUANTUM COMPUTING ON CYBERSECURITY</a></h2>
+                                                </div>
+                                                <div class="absolute">
+                                                    <p>How quantum computing will create opportunities for improved cybersecurity?</p>
+                                                </div>
+                                                <p><a href="https://www.analyticsinsight.net/the-promise-and-impact-of-quantum-computing-on-cybersecurity/#:~:text=Quantum%20computing%20can%20be%20a%20ground-breaking%20technology%20for,cause%20harm%20to%20groups%20and%20individuals.%20Quantum%20Cybersecurity"
+                                                        class="custom-btn">View Article</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 portfolio-wrap">
+                            <div class="row no-gutters align-items-center">
+                                <a href="/static/images/1673316.jpg" class="col-md-6 img js-fullheight d-flex align-items-center justify-content-center " style="background-image: url(/static/images/1673316.jpg);">
+                                    <div class="icon d-flex align-items-center justify-content-center ">
+                                        <span class="fa fa-expand "></span>
+                                    </div>
+                                </a>
+                                <div class="col-md-6">
+                                    <div class="text pt-5 pl-0 px-lg-5 pl-md-4 ftco-animate">
+                                        <div class="px-4 px-lg-4">
+                                            <div class="desc">
+                                                <div class="top">
+                                                    <span class="subheading">OWASP</span>
+                                                    <h2 class="mb-4"><a href="https://www.bing.com/search?q=binary+lock+Vulnerability&FORM=AWRE"> Lack of Binary Protections</a></h2>
+                                                </div>
+                                                <div class="absolute">
+                                                    <p>Prevalence A lack of binary protections within a mobile app exposes the application and it’s owner to a large variety of technical and business risks if the underlying application is insecure or exposes
+                                                        sensitive intellectual property. A lack of binary protections results in a mobile app that can be analyzed, reverse-engineered, and modified by an adversary in rapid fashion. However, an application
+                                                        with binary protection can still be reversed by a dedicated adversary and therefore binary protection is not a perfect security solution. At the end of the day, binary protection only slows down
+                                                        a security review. It is extremely common for apps to be deployed without binary protection. The prevalence has been extensively studied by a large number of security vendors, analysts, and researchers</p>
+                                                </div>
+                                                <p><a href="https://owasp.org/www-project-mobile-top-10/2014-risks/m10-lack-of-binary-protections" class="custom-btn ">View OWASP</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex">
+                        <div class="col-md-12">
+                            <a href="/" class="btn-custom-load d-block w-100 text-center py-4">Load more <span class="fa fa-refresh"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- END COLORLIB-MAIN -->
+    </div>
+    <!-- END COLORLIB-PAGE -->
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.easing.1.3.js"></script>
+    <script src="/static/js/jquery.waypoints.min.js"></script>
+    <script src="/static/js/jquery.stellar.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <script src="/static/js/jquery.animateNumber.min.js"></script>
+    <script src="/static/js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="/static/js/google-map.js"></script>
+    <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>

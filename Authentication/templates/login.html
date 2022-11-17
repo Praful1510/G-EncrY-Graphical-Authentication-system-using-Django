@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>G=EncrY | Demontration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+
+<body>
+    <a href="https://front.codes/" class="logo" target="_blank" id="logo">
+        <p>G-EncrY</p>
+    </a>
+    {% if data or slice %} {% if data %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="set-password" name="data" class="option-img" id="formid">
+        <input type="hidden" name="code" id="code"> <br><br>{% for x in data %}
+        <button type="button" class="img-op" onclick="data.code.value += '{{x.family_name}}';submit();" id="toverimg" value="{{x.family_name}}" style="background-image:url(static/media/{{x.images}})">
+            </button> {% endfor %}
+    </form>
+    <script>
+        function submit() {
+            document.getElementById('formid').submit();
+        }
+    </script>
+    {% endif %} {% if slice %}
+    <br>
+    <form action="set-password" name="sliced" class="option-img2" id="formid2" method="post">
+        {% csrf_token %}
+        <button class="button-89" type="reset">Forget Selection</button>
+        <a href="logout" style="margin-left: 20%;" class="button-89">Not Now</a>
+        <button class="button-89" style="margin-left:22%;font-size: 15px;" onclick="submit();">SET</button>
+        <br>
+        <!--Hightlight banana h abhi focus h abhi-->
+        <input type="text" name="unique" id="unique" class="form-control" style="display: none;"><br> {% for x in slice %}
+        <!--<button type="button" class="img-op2" onclick="sliced.unique.value += '+{{x.Unique_Token}}';check();" id="toverimg" value="{{x.Unique_Token}}" style="background-image:url(static/media/{{x.Images}})">-->
+        <button type="button" class="img-op2" id="toverimg" value="{{x.Unique_Token}}" style="background-image:url(static/media/{{x.Images}})">
+            </button> {% endfor %}
+    </form>
+    <script src="/static/js/password.js"></script>
+    {% endif %} {% else %}
+    <div class="section">
+        <div class="container">
+            <div class="row full-height justify-content-center">
+                <div class="col-12 text-center align-self-center py-5">
+                    <div id="G-Encry"></div>
+                    <div class="section pb-5 pt-5 pt-sm-2 text-center" id="s_l_in">
+                        <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+                        <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                        <label for="reg-log"></label>
+                        <div class="card-3d-wrap mx-auto">
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Log In</h4>
+                                            <form action="join">
+                                                <div class="form-group">
+                                                    <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+                                                    <i class="input-icon uil uil-at"></i>
+                                                </div><br>
+                                                <div class="form-group dropdown1">
+                                                    <button type="submit" class="btn btn-secondary">PASSWORD</button>
+                                                </div><br>
+                                            </form>
+                                            <br>
+                                            <div style="color:red">
+                                                {{msg}}
+                                            </div>
+                                            <!--<a href="#" class="btn mt-4">submit</a>-->
+                                            <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Sign Up</h4>
+                                            <form action="join">
+                                                <div class="form-group">
+                                                    <input type="text" name="nm" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
+                                                    <i class="input-icon uil uil-user"></i>
+                                                </div>
+                                                <div class="form-group mt-2">
+                                                    <input type="email" name="email" class="form-style" placeholder="Your Email" id="mail" autocomplete="off">
+                                                    <i class="input-icon uil uil-at"></i>
+                                                </div>
+                                                <br>
+                                                <b class="text-danger" id="output"></b>
+                                                <br>
+                                                <div class="form-group dropdown1">
+                                                    <button type="submit" class="btn btn-secondary">PASSWORD
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        <script>
+            function slice() {
+                var opt = document.getElementsByName("option-img").values
+                console.log(opt)
+            }
+
+            function send() {
+                var name = document.getElementsByClassName("img-op").value;
+                console.log(name);
+                var req = new XMLHttpRequest();
+                var url = "/set-password?email=" + mail + "&nm=" + name + "&lm=" + lmail;
+                req.open("GET", url);
+                req.onreadystatechange = function() {
+                    if (req.readyState == 4) {
+                        console.log('working succesfully !');
+                        console.log(req.responseText);
+                        if (req.responseText == "Can't be recognise | try again") {
+                            document.getElementById('output').innerHTML = req.responseText;
+                        } else {
+                            document.getElementById('s_l_in').innerHTML = "";
+                            document.getElementById('logo').innerHTML = "";
+                            document.getElementById('G-Encry').innerHTML = req.responseText;
+                        }
+                    }
+                }
+                req.send();
+            }
+        </script>
+</body>
+
+</html>
