@@ -21,7 +21,8 @@ Sign-up or Sign-in
 ![Screenshot (68)](https://user-images.githubusercontent.com/107274773/202574535-b2c6d506-2ed8-4812-b0f5-7d080cc2cdd8.png)
 ![Screenshot (69)](https://user-images.githubusercontent.com/107274773/202574540-b8d45909-34a2-470a-99b0-a9834905d362.png)
 
-# So many thinking in this proto-type is (one block hash as key of another block {inspire from block chain concept}) its not a actual project but its similar kind of Model . 
+So many thinking in this proto-type like (one block hash as key of another block {inspire from block chain concept}) its not a actual project but its similar kind of Model . 
 All Necessities will be common on both .
 #G-EncrY by Praful shrivastava
 master industries & Security Switch comming soon !
+Follow For More !
